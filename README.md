@@ -42,10 +42,10 @@ go version
 
 ### Download and build binaries
 ```
-cd $HOME
-mkdir -p $HOME/go/bin
-curl -L https://snapshots-testnet.nodejumper.io/union-testnet/uniond-v0.19.0-linux-amd64 > $HOME/go/bin/uniond
-chmod +x $HOME/go/bin/uniond
+cd $HOME && mkdir -p go/bin/
+wget -O uniond https://testnet-files.itrocket.net/union/uniond
+chmod +x uniond
+mv uniond $HOME/go/bin/
 ```
 # Create the client configuration file
 ```
@@ -58,7 +58,7 @@ broadcast-mode = "sync"' > $HOME/.union/config/client.toml
 
 # Initialize the node
 ```
-uniond init "Your Node Name" --chain-id union-testnet-6
+uniond init "Your Node Name" --chain-id union-testnet-8
 ```
 
 # Download genesis and addrbook files
@@ -173,7 +173,7 @@ uniond tx staking create-validator \
 ```
 There have been no updates at the moment, as soon as they come out, we will immediately add them to this section.
 
-Current network:union-testnet-6
+Current network:union-testnet-8
 Current version:v0.20.0
 ```
 
