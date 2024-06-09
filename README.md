@@ -47,14 +47,6 @@ wget -O uniond https://testnet-files.itrocket.net/union/uniond
 chmod +x uniond
 mv uniond $HOME/go/bin/
 ```
-# Create the client configuration file
-```
-echo -e 'chain-id = "union-testnet-6"
-keyring-backend = "test"
-output = "text"
-node = "tcp://localhost:24657"
-broadcast-mode = "sync"' > $HOME/.union/config/client.toml
-```
 
 # Initialize the node
 ```
