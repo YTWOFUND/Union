@@ -166,7 +166,7 @@ uniond tx staking create-validator \
 There have been no updates at the moment, as soon as they come out, we will immediately add them to this section.
 
 Current network:union-testnet-8
-Current version:v0.20.0
+Current version:v0.24.0
 ```
 
 ### Useful commands
